@@ -2,7 +2,7 @@
 A variety of games implemented in the pygame framework. Game Menu implented using Python inbuilt GUI library tkinter while games are made using pygame. Project started off with 6 simple games - Pong, Shooter, Dino, Snake, Life and Typing - with additional plans to add more games in the future. Shooter game is heavily inspired by Chris Courses JavaScript & Canvas game on Youtube, while Typing game is heavily inspired by Bisqwit's version. 
 
 Main Menu
-![image](https://user-images.githubusercontent.com/99358134/195958806-1aeef2f3-c204-48bb-93e7-53ed8846f9f1.png)
+![image](https://user-images.githubusercontent.com/99358134/195959366-fc529c47-3efb-496c-b8cb-e917cc81cd57.png)
 
 Pong
 ![image](https://user-images.githubusercontent.com/99358134/195958913-7df3b8d8-ff6e-4f90-b57d-f3b0703e1ea4.png)
