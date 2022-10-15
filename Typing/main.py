@@ -257,7 +257,7 @@ class Game:
     
     def displayScores(self):
         self.window.fill(Colours.BLACK)
-        top_scores = self.getHighScores(10)
+        top_scores = self.getHighScores(SCORES_LIMIT)
         self.window.fill(Colours.BLACK)
 
         starting_x = self.win_x * 0.5
@@ -327,8 +327,8 @@ class Game:
                 self.displayGameOver()
                 self.saveScore()
 
-                top_scores = self.getHighScores(10)
-                if self.score > int(top_scores[-1]["Score"]):
+                top_scores = self.getHighScores(SCORES_LIMIT)
+                if self.score > int(top_scores[-1]["Score"]) or len(top_scores) < SCORES_LIMIT:
                     self.highscorescreen = True
                 else:
                     self.reset()
@@ -353,6 +353,8 @@ NO_OBSTACLES = 10
 FILENAME = "simple_english.txt"
 WORD_LEN = 8
 WORD_SPEED = -1.5
+
+SCORES_LIMIT = 10
 
 g = Game(WIN_X,WIN_Y)
 g.startGame()
